@@ -9,6 +9,7 @@
 ```
 pipenv install --three
 docker-compose up -d db
+pipenv shell
 python main.py
 ```
 

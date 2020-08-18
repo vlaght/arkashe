@@ -33,7 +33,7 @@ def fill_data():
                     body=fake.text(),
                 ) for _ in range(random.randint(3,7))
             ]
-        ) for _ in range(random.randint(1, 10))
+        ) for _ in range(random.randint(5, 15))
     ]
     images = [
         Image(url=fake.image_url())

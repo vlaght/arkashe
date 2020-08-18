@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  db:
+    image: mariadb:10
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+    volumes:
+      - ./init/create_databases.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+    ports:
+      - 3306:3306

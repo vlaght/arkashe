@@ -10,7 +10,6 @@
 pipenv install --three
 docker-compose up -d db
 python main.py
-
 ```
 
 После чего
@@ -18,4 +17,15 @@ python main.py
 mysql -u root -h0 db
 ```
 
-Вуаля, база с фейковыми данными
+Вуаля, база с фейковыми данными.
+
+Если что-то из зависимостей не встало, вот тебе выхлоп ```pip freeze```
+
+```
+Faker==4.1.2
+PyMySQL==0.10.0
+python-dateutil==2.8.1
+six==1.15.0
+SQLAlchemy==1.3.19
+text-unidecode==1.3
+```
